@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+    <head>
+        <title>title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="lib/jquery-1.6.4.js"></script>
+        <script src="lib/jquery.mobile-1.1.0.js"></script>
+        <link href="src/css/jquery.mobile.structure-1.1.0.css" rel="stylesheet"
+        />
+        <link href="src/css/jquery.mobile.theme-1.1.0.css" rel="stylesheet" />
+		
+		<style type="text/css">
+.chkans {
+margin:10px 10px -5px 0;
+}
+
+span.chkans {
+position:relative;
+top:5px
+}
+
+* html span.chkans {
+top:2px
+}
+</style>
+    </head>
+    
+    <body>
+        <div data-role="page" id="page1" style="background-image: url('images/la.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="b">
+            <div data-role="header">
+                <h1>Mobile Learning</h1>
+            </div>
+            <div data-role="content">
+                <marquee ><center> <h2> <font color="14357">SELAMAT DATANG DI MODUL PEMBELAJARAN ACTIVITY DATABASE PADA MOODLE</font></h2> </center></marquee>
+                <h2>MODUL PEMBELAJARAN</h2>
+                <h2>DATABASE</h2>
+                <img src="images/moodle-logo.png" width="300" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page2" style="background-image: url('images/la.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Menu</h1>
+            </div>
+            <div data-role="content">
+                <h2>Materi</h2>
+                <ul data-role="listview" data-inset="true">
+                    <li data-theme="b">
+                        <a href="#page3" data-transition="slideup"><img src="images/pendahuluan.png" class="ui-li-thumb" width="80" height="80">Materi</a>
+                    </li>
+					<li data-theme="b">
+                        <a href="#page19" data-transition="fade"><img src="images/kb.png" class="ui-li-thumb" width="80" height="80">Deskripsi</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page4" data-transition="slidedown"><img src="images/ck.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Checkbox</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page5" data-transition="flip"><img src="images/date.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Date</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page6" data-transition="pop"><img src="images/file.png" class="ui-li-thumb" width="80" height="80">Cara Membuat File</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page7" data-transition="fade"><img src="images/lalo.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Latitude/Longtitude</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page8" data-transition="slideup"><img src="images/menu.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Menu</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page9" data-transition="fade"><img src="images/menu-select.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Menu Multi Select</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page10" data-transition="pop"><img src="images/numb.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Number</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page11" data-transition="slidedown"><img src="images/pict.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Picture</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page12" data-transition="slideup"><img src="images/rb.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Radio Button</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page13" data-transition="fade"><img src="images/text.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Text</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page14" data-transition="pop"><img src="images/ta.png" class="ui-li-thumb" width="80" height="80">Cara Membuat Text Area</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page15" data-transition="slideup"><img src="images/url.png" class="ui-li-thumb" width="80" height="80">Cara Membuat URL</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page16" data-transition="slidedown"><img src="images/lat.png" class="ui-li-thumb" width="80" height="80">Latihan</a>
+                    </li>
+                    <li data-theme="b">
+                        <a href="#page18" data-transition="fade"><img src="images/video.png" class="ui-li-thumb" width="80" height="80">Video Tutorial</a>
+                    </li>
+                </ul>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page3" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;"  data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Pendahuluan</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>Tujuan :</h2>
+                <p>Dapat menjelaskan fungsi dari Salah satu Activiy pada moodle yaitu Activity Database.</p>
+                <h2>Materi :</h2>
+                <p>Kegiatan pembelajaran 1 : Checkbox</p>
+                <p>Kegiatan pembelajaran 2 : Date</p>
+                <p>Kegiatan pembelajaran 3 : File</p>
+                <p>Kegiatan pembelajaran 4 : Latitude/Longtitude</p>
+                <p>Kegiatan pembelajaran 5 : Menu</p>
+                <p>Kegiatan pembelajaran 6 : Menu (Multi Select)</p>
+                <p>Kegiatan pembelajaran 7 : Number</p>
+                <p>Kegiatan pembelajaran 8 : Picture</p>
+                <p>Kegiatan pembelajaran 9 : Radio Button</p>
+                <p>Kegiatan pembelajaran 10 : Text</p>
+                <p>Kegiatan pembelajaran 11 : Text Area</p>
+                <p>Kegiatan pembelajaran 12 : URL</p>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page4" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 1</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>Checkbox</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <span>Dapat memahami salah satu field activity Checkbox yang ada pada activity database
+                    moodle</span>
+                <h2>Pokok Materi</h2>
+                <span>Langkah-langkah membuat checkbox dalam activity database</span>
+                <h2>Materi :</h2>
+                <p>1. Isikan field name dan deskripsi(jika perlu)</p>
+                <span>2. Isikan option sebagai item pilihan</span>
+                <p>3. klik add</p>
+                <img src="images/checkbox.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" class="ui-btn-active" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page5" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 2</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>DATE</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity Date yang ada pada activity database moodle</p>
+                <h1>Pokok Materi</h1>
+                <span>Langkah-langkah membuat checkbox dalam activity database</span>
+                <h2>Materi :</h2>
+                <p>Field Date ini di pergunakan untuk memperbolehkan user menambahkan tanggal</p>
+                <span>1. Pada Choose pilih Date</span>
+                <p>2. Isikan Field name dengan Nama field yang diinginkan</p>
+                <span>3. Isikan Field descripsion jika diperlukan</span>
+                <p>4. Klik add</p>
+                <img src="images/datee.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page7" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 4</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>Longtitude/Latitude</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity Longtitude/Latitude yang ada pada activity
+                    database moodle</p>
+                <h2>Pokok Materi</h2>
+                <p>Langkah-langkah membuat Longtitude/Latitude dalam activity database</p>
+                <h2>Materi :</h2>
+                <p>Untuk menampilkan posisi kita pada database:</p>
+                <span>1. Isikan Field Name</span>
+                <p>2. Isikan Field Description (Jika diperlukan)</p>
+                <span>3. Pilih link untuk menampilkan posisi kita di peta googleMap, Google Earth, Open
+                    Street Map, dan MultiMap</span>
+                <p>4. Klik add</p>
+                <img src="images/latitude.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page8" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 5</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>MENU</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field menu yang ada pada activity database moodle</p>
+                <h2>Pokok Materi</h2>
+                <span>Langkah-langkah membuat menu dalam activity database</span>
+                <h2>Materi :</h2>
+                <p>Field ini digunakan untuk menampilkan menu drop-down.</p>
+                <span>1. Isikan Field Name</span>
+                <p>2. Isikan Field Description (Jika diperlukan)</p>
+                <span>3. Isikan Option untuk menampilkan pilihan menu</span>
+                <p>4. Klik add</p>
+                <img src="images/menufild.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page9" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 6</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>Menu (Multi-Select)</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity Menu (Multi-Select) yang ada pada activity
+                    database moodle</p>
+                <h2>Pokok Materi</h2>
+                <span>Langkah- langkah membuat menu (multi-select) dalam activity database</span>
+                <h2>Materi :</h2>
+                <p>Field ini hampir sama seperti menu, tetapi disini kita dapat memilih lebih dari
+                    satu pilihan.</p>
+                <p>1. Isikan Field Name</p>
+                <span>2. Isikan Field Description (Jika diperlukan)</span>
+                <p>3. Isikan Option untuk menampilkan pilihan menu</p>
+                <p>4. Klik add</p>
+                <img src="images/multiple slide.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page10" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 7</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>NUMBER</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity Number yang ada pada activity database
+                    moodle</p>
+                <h2>Pokok Materi</h2>
+                <span>Langkah-langkah membuat number dalam activity database</span>
+                <h2>Materi :</h2>
+                <p>Field ini untuk memasukkan angka, angka yang di masukkan harus bilangan bulat, dapat
+                    memasukkan bilangan negatif</p>
+                <p>1. Isikan Field Name</p>
+                <p>2. Isikan Field Description (Jika diperlukan)</p>
+                <p>3. Klik Add</p>
+                <img src="images/numberfild.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page11" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 8</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>PICTURE</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity Picture yang ada pada activity database
+                    moodle</p>
+                <h2>Pokok Materi</h2>
+                <span>Langkah-langkah membuat picture dalam activity database</span>
+                <h2>Materi :</h2>
+                <p>Kolom ini digunakan untuk manambahkan gambar.</p>
+                <span>1. Isikan Field Name</span>
+                <p>2. Isikan Field Description (Jika diperlukan)</p>
+                <p>3. Isi width in single view untuk menampilkan gambar pada tampilan single view</p>
+                <span>4. Isi height in single view untuk menampilkan gambar pada tampilan single view</span>
+                <p>5. Isi width in list view untuk menampilkan gambar pada tampilan list view.</p>
+                <p>6. Isi height in list view untuk menampilkan gambar pada tampilan list view.</p>
+                <p>7. Pilih ukuran maksimum gambar pada maximum size</p>
+                <p>8. Klik add</p>
+                <img src="images/picture filld.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page12" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 9</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>RADIO BUTTON</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity Radio Button yang ada pada activity database
+                    moodle</p>
+                <h2>Pokok Materi</h2>
+                <span>Langkah-langkah membuat Radio button dalam activity database</span>
+                <h2>Materi :</h2>
+                <p>Kolom ini digunakan untuk memberikan pilihan kepada user, user hanya dapat memilih
+                    satu pilihan, bila user tidak memilih sama sekali maka user akan mendapatkan peringatan
+                    untuk memilih salah satu.</p>
+                <span>1. Isikan Field Name</span>
+                <p>2. Isikan Field Description (Jika diperlukan)</p>
+                <p>3. Isikan Option untuk menampilkan pilihan menu</p>
+                <p>4. Klik add</p>
+                <img src="images/radio.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page13" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 10</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>TEXT</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity Text yang ada pada activity database moodle</p>
+                <h2>Pokok Materi</h2>
+                <span>Langkah-langkah membuat Text field</span>
+                <h2>Materi :</h2>
+                <p>Kolom ini digunakan untuk memasukkan teks yang tidak terlalu panjang.</p>
+                <p>1. Isikan Field Name</p>
+                <p>2. Isikan Field Description (Jika diperlukan)</p>
+                <p>3. Klik add</p>
+                <img src="images/textfild.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page14" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 11</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>Textarea</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity Textarea yang ada pada activity database
+                    moodle</p>
+                <h2>Pokok Materi</h2>
+                <span>Langkah-langkah membuat textarea dalam activity database</span>
+                <h2>Materi :</h2>
+                <p>Kolom ini digunakan untuk memasukkan teks yang panjang.</p>
+                <p>1. Isikan Field Name</p>
+                <p>2. Isikan Field Description (Jika diperlukan)</p>
+                <span>3. Masukkan width untuk menentukan lebar (kolom)</span>
+                <p>4. Masukkan height untuk menentukan tinggi (Baris)</p>
+                <p>5. Klik add</p>
+                <img src="images/textare.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page15" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 12</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>URL</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity URL yang ada pada activity database moodle</p>
+                <h2>Pokok Materi</h2>
+                <p>Langkah-langkah untuk memasukkan alamat URL dalam acativity database</p>
+                <h2>Materi :</h2>
+                <p>Melakukan proses capture menggunakan Window Capture</p>
+                <p>1. Isikan Field Name</p>
+                <p>2. Isikan Field Description (Jika diperlukan)</p>
+                <span>3. Force name for the link digunakan untuk menampilkan url dalam bentuk nama alias</span>
+                <p>4. Centang Autolink the Url untuk melakukan link bila url di klik</p>
+                <p>5. Klik Add</p>
+                <img src="images/urlfild.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page16" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Latihan</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <script type="text/javascript">
+/*/////////////////////////////
+* Quiz Writing & Scoring Script
+* © 2005 John Davenport Scheuer
+* jscheuer1TAKEOUTCAPSFOREMAIL@comcast.net
+* permission to use granted
+* this credit must stay intact
+/////////////////////////////*/
+
+//Set to 0 for no answers given away
+//Set to 1 to allow peeking
+var allowPeeking=1
+
+//Set to 0 for no Starting Over without refresh
+//Set to 1 to allow Easy Do Overs
+var allowDoOvers=1
+
+questions=new Array();
+//Set Questions and Answers Arrays Below.
+//Questions come first. Then come the answer pairs:
+//Follow the right answer with "right", all wrong ones with ""
+questions[0]=["Apa kegunaan dari Activity File pada Database?", "Untuk melakukan upload data", "right", "Untuk Memasukkan Data Tanggal", "" ,"Memasukkan Text yang panjang", "", "Memasukkan Text yang tidak terlalu panjang", ""]
+questions[1]=["Apa kegunaan dari Activity Date pada Database?", "Untuk Memasukkan Data Tanggal", "right", "Untuk melakukan upload data", "", "Untuk melakukan upload gambar", "", "Memasukkan Text yang panjang", ""]
+questions[2]=["Apa kegunaan dari Activity Picture pada Database?", "Untuk melakukan upload gambar", "right", "Memasukkan Text yang panjang", "", "Memasukkan Text yang tidak terlalu panjang", "", "Untuk melakukan upload data", ""]
+questions[3]=["Apa kegunaan dari Activity Text Area pada Database?", "Memasukkan Text yang panjang", "right", "Memasukkan Text yang tidak terlalu panjang", "", "Untuk melakukan upload gambar", "", "Untuk Memasukkan Data Tanggal", ""]
+questions[4]=["Apa kegunaan dari Activity Text pada Database?", "Memasukkan Text yang tidak terlalu panjang", "right", "Memasukkan Text yang panjang", "", "Untuk melakukan upload gambar", "", "Untuk melakukan upload data", ""]
+
+////////////////Stop Editing///////////////
+
+for (i = 0; i < questions.length; i++){
+for (j = 0; j < questions[i].length; j++){
+if (questions[i][j]=="")
+questions[i][j]=("w"+i)+j
+if (questions[i][j]=="right")
+questions[i][j]="right"+i
+}
+}
+var ie=document.all
+function showAnswer(el,ans){
+ie? ie[el].innerHTML='The correct answer is: '+ ans : document.getElementById(el).innerHTML='The answer is: '+ ans
+}
+
+function addup() {
+var q, right, statement, total=0
+quizQuests=new Array();
+
+for (i = 0; i < questions.length; i++)
+quizQuests[i]=0
+if (document.forms.quiz.q0['right0']){
+for (i = 0; i < questions.length; i++){
+q="q"+i
+right="right"+i
+if (document.forms.quiz[q][right].checked)
+quizQuests[i]=1
+}
+}
+else if (document.getElementById){
+for (i = 0; i < questions.length; i++){
+right="right"+i
+if (document.getElementById(right).checked)
+quizQuests[i]=1
+}
+}
+else
+return;
+for (i = 0; i < questions.length; i++)
+total += quizQuests[i]
+/*/////////////////////////////////////////////////
+Set score response below.
+///////////////////Edit Below to Suit/////////////*/
+statement='You scored '+ total +' out of '+ questions.length +' correct, '+ Math.round(total/questions.length*100) +'%'
+/////////////////Stop Editing///////////////////
+ie? ie.results.innerHTML=statement : document.getElementById('results').innerHTML=statement
+}
+function clearR(){
+ie? ie.results.innerHTML='' : document.getElementById('results').innerHTML=''
+for (i = 0; i < questions.length; i++)
+if (allowPeeking)
+ie? ie["ans"+i].innerHTML='' : document.getElementById("ans"+i).innerHTML=''
+window.scrollTo(0,0);
+}
+document.write('<hr><form name="quiz">')
+var correct, answersString
+for (i = 0; i < questions.length; i++){
+answersString=''
+for (k = 1; k < questions[i].length; k+=2)
+answersString+='<input id="'+questions[i][(k+1)]+'" type="radio" unchecked name="q'+i+'"><label for="'+questions[i][(k+1)]+'">'+questions[i][k]+'</label><br>'
+for (j = 0; j < questions[i].length; j++){
+if (questions[i][j]=="right"+i)
+correct=questions[i][j-1]
+}
+with (document){
+write('Question '+(i+1)+':<br>')
+write(questions[i][0]+'<br>')
+write(answersString)
+if (allowPeeking)
+write('<input class="chkans" type="button" value="Check Answer" onclick="showAnswer(\'ans'+i+'\',\''+correct+'\')">&nbsp;<span id="ans'+i+'" class="chkans"></span><br>&nbsp;')
+write('<br>')
+}
+}
+with (document){
+write('<hr><br>')
+write('<input type="button" value="See Score" onclick="addup()">&nbsp;&nbsp;<span id="results"></span><br>&nbsp;<br>')
+if (allowDoOvers)
+write('<input type="button" value="Start Again" onclick="reset();clearR()">')
+write('</form>')
+}
+</script>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h1>Footer</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page17" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Profil</h1>
+            </div>
+            <div data-role="content">
+                <p>Nama : Alfan Nur Andika Romelan Putra</p>
+                <p>Kelas : TI 4.2</p>
+                <p>NIM : 1112009</p>
+                <img src="images/alfa.png" width="200" height="200" style="display: block; margin: 0 auto"
+                />
+            </div>
+        </div>
+        <div data-role="page" id="page18" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Video</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content"></div>
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/nMUURNdZTYs" frameborder="0" allowfullscreen></iframe>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div data-role="page" id="page6" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Kegiatan Belajar 3</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>FILE</h2>
+                <h2>Tujuan Pembelajaran :</h2>
+                <p>Dapat memahami salah satu field activity File yang ada pada activity database moodle</p>
+                <h1>Pokok Materi</h1>
+                <span>Langkah-langkah membuat File dalam activity database</span>
+                <h2>Materi :</h2>
+                <p>Kolom inimemperbolehkan user untuk melakukan upload sebuah file</p>
+                <span>1. Isikan Field Name</span>
+                <p>2. Isikan Field Description (Jika diperlukan)</p>
+                <span>3. Pilih ukuran file maksimum di Maximum Size</span>
+                <p>4. Klik add</p>
+                <img src="images/fiel fied.png" style="display: block; margin: 0 auto"
+                />
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		<div data-role="page" id="page19" style="background-image: url('images/bg.png'); background-attachment: fixed; background-repeat: no-repeat; background-size: 100% 100%;" data-theme="e" data-title="Mobile Learning">
+            <div data-role="header">
+                <h1>Deskripsi</h1>
+                <a data-role="button" data-rel="back" data-icon="back">BACK</a>
+            </div>
+            <div data-role="content">
+                <h2>Activity Database</h2>
+				<p>Activity Database adalah activity yang digunakan untuk melakukan inputan yang dilakukan oleh user ke sistem.</p>
+				<p>Masukan yang dapat dilakukan oleh user antara lain</p>
+				<p>-> Checkbox</p>
+                <p>-> Date</p>
+                <p>-> File</p>
+                <p>-> Latitude/Longtitude</p>
+                <p>-> Menu</p>
+                <p>-> Menu (Multi Select)</p>
+                <p>-> Number</p>
+                <p>-> Picture</p>
+                <p>-> Radio Button</p>
+                <p>-> Text</p>
+                <p>-> Text Area</p>
+                <p>-> URL</p>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a data-role="button" href="#page1" data-icon="home">Home</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page2" data-icon="grid">Menu</a>
+                        </li>
+                        <li>
+                            <a data-role="button" href="#page17" data-transition="flip" data-rel="dialog" data-icon="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
